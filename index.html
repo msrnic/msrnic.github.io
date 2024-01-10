@@ -6,23 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Marko Srnic - Portfolio</title>
     </head>
+    <script src="click_and_scroll.js"></script>
     <body>
-    <header>
-        <h1>Marko Srnic</h1>
-        <p>University of Alberta - 3rd Year Software Engineer</p>
-    </header>
-    <section>
+    <div class="parallax">
+        <div class="sun">
+        <div class="sun_container" onclick="smoothScroll(document.getElementById('contact'))">
+            <div class="fade">
+            <p>Contact</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section class="fade" id="about">
         <h2>About Me</h2>
         <p>Write a brief introduction about yourself here.</p>
     </section>
-
     <section>
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project fade">
             <h3>Python Project - Dungeons & Dragons Visual Database</h3>
             <p>In this project, I developed a Graphical User Interface (GUI) 
                 to display and search for spells from the popular table-top 
-                roleplaying game Dungeons & Dragons (D&D). I retrived my data 
+                roleplaying game Dungeons & Dragons (D&D). I retrieved my data 
                 from the official D&D 5th Edition API, which contains all the 
                 information regarding the attributes and characteristics for any asset
                 in the game, in the JSON format. For this project, I relied on my skills in Python, but also gained
@@ -31,7 +36,6 @@
                 Programming extensively in the project.
             </p>
         </div>
-
         <div class="project">
             <h3>Project 2</h3>
             <p>Description of Project 2.</p>
@@ -40,15 +44,18 @@
         <!-- Add more projects as needed -->
 
     </section>
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
         <p>Phone: +1 (780)-868-6803</p>
         <p>Email: msrnic@ualberta.ca, m.srnic951@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/marko-srnic-3792562a9/" target="_blank">LinkedIn Profile</a></p>
         <p>GitHub: <a href="https://github.com/msrnic" target="_blank">GitHub Profile</a></p>
     </section>
+    <!--
     <footer>
         <p>&copy; 2024 Marko Srnic - Portfolio</p>
     </footer>
+-->
     </body>
 </html>
+*/
