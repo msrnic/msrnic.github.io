@@ -1,114 +1,221 @@
-html {
-    height: 100%;
-    scroll-behavior: smooth;
-}
-
-body {
-    background-image: url('star_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Arial, sans-serif;
+* { 
+    box-sizing: border-box; 
+  }
+  html {
     margin: 0;
-    padding: 0;
-    background-color: #fff4c5;
-    height: 100%;
-}
-
-header {
-    background-color: #000058;
-    text-align: center;
-    color: #fff;
-    padding: 1em;
-}
-
-section {
-    padding: 2em;
-    width: 50%;
-}
-
-h1 {
-    color: #fff;
-} 
-
-h2, h3 {
-    color: #fff;
-}
-
-.project {
-    margin-bottom: 2em;
-    margin-right: 30%;
-    color: #fff;
-    background-color: transparent;
-}
-
-.parallax {
-    background-image: url('star_background.jpg');
-    height: 100%;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-footer {
-    background-color: #000058;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.fade {
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.fade:hover {
-    opacity: 1;
-}
-
-.sun_container {
-    height: 250px;
-    width: 250px;
-    background-color: #bbb;
-    background-image: url("2k_sun.jpg");
-    border-radius: 50%;
-    display: inline-block;
-    animation: glow 5s infinite;
-    transition: transform 0.3s;
-}
-
-.sun_container div {
-    height: 245px;
-    border: solid transparent;
-}
-
-.sun_container div p {
-    margin-top: 80px;
-    margin-right: 1px;
-    text-align: center;
-    font-size: 60px;
-    font-family: "Arial";
-    border: solid transparent;
-}
-
-@keyframes glow {
-    0% { box-shadow: 0 0 15px 9px #FF6E00; }
-    40% { box-shadow: 0 0 30px 9px #FF6E00; }
-    60% { box-shadow: 0 0 30px 9px #FF6E00; }
-    100% { box-shadow: 0 0 15px 9px #FF6E00; }
+    background: url("knight.jpg") no-repeat center center fixed;
+    background-blend-mode: darken;
+    transition: 3s;
+    scroll-behavior: smooth;
+  }
+  body { 
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+   }
+  div#toppage { 
+      height: 100vh;
+      color: #fff;
+      width: 35%;
+      margin-top: 25%;
+      margin-left: 5%;
+      padding-left: 2rem;
   }
 
-.sun {
-    margin: auto;
-    width: 250px;
-    vertical-align: middle;
-    padding-top: 33vh;
-    border: solid transparent;
-}
+  div#toppage h1 { 
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 100;
+  }
 
-.sun_container:hover {
-    transform: scale(1.2);
-}
+  div#toppage p { 
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.2em;
+   }
+  @media all and (max-width: 770px) {
+      div#toppage { display: none; }
+  }
+
+  .main-section {
+    padding: 40px;
+    background-color: #000058;
+    font-family: "copperplate";
+  }
+
+  .main-section p#contacts {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    margin-top: 0;
+    font-family: "Oxygen", sans-serif;
+  }
+
+  .main-section a {
+    font-family: "copperplate";
+    color: white;
+    margin-left: 5%;
+  }
+
+  .main-section div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-section div.flexbox#menu {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+  }
+
+  .main-section div.flexbox#menu a {
+    font-family: "Oxygen", sans-serif;
+    color: white;
+    font-size: 2em;
+  }
+
+  .main-section div.flexbox#flex3 {
+    justify-content: center;
+    font-size: 0.95em;
+  }
+
+  .main-section div#projects {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-family: "Oxygen", sans-serif;
+  }
+
+  .main-section div img{
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .main-section div#about {
+    width: 60vw;
+    height: 69vh;
+    color: white;
+    border: solid white;
+    border-width: 10px;
+    border-radius: 25px;
+  }
+
+  .main-section div#about p{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    font-size: 300%;
+  }
+
+  .main-section div#about h2{
+    margin-left: 5%;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .main-section div#aboutIMG {
+    width: 30vw;
+    height: auto;
+  }
+
+  .main-section div#project1 {
+    width: 60vw;
+    height: 69vh;
+    color: white;
+    border: solid white;
+    border-width: 10px;
+    border-radius: 25px;
+  }
+
+  .main-section div#project1 p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 300%;
+  }
+
+  .main-section div#project1 h2{
+    margin-left: 5%;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .main-section div#project1IMG {
+    width: 30vw;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .main-section div img#python {
+    width: 26.5vw;
+    margin-left: 20px;
+  }
+
+  .main-section div#project2 {
+    width: 60vw;
+    height: 69vh;
+    color: white;
+    border: solid white;
+    border-width: 10px;
+    border-radius: 25px;
+  }
+
+  .main-section div#project2 p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 300%;
+  }
+
+  .main-section div#project2 h2{
+    margin-left: 5%;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .main-section div#project2IMG {
+    width: 30vw;
+    height: auto;
+  }
+
+  .main-section div img#cplusplus {
+    width: 32vw;
+  }
+
+  .main-section div#project3 {
+    width: 60vw;
+    height: 69vh;
+    color: white;
+    border: solid white;
+    border-width: 10px;
+    border-radius: 25px;
+  }
+
+  .main-section div#project3 p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 300%;
+  }
+
+  .main-section div#project3 h2{
+    margin-left: 5%;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .flexbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }

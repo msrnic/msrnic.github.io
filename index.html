@@ -1,61 +1,110 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Marko Srnic - Portfolio</title>
-    </head>
-    <script src="click_and_scroll.js"></script>
-    <body>
-    <div class="parallax">
-        <div class="sun">
-        <div class="sun_container" onclick="smoothScroll(document.getElementById('contact'))">
-            <div class="fade">
-            <p>Contact</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
+</head>
+<script src="script.js"></script>
+<body>
+    <section>
+        <div id="toppage">
+            <h1>Marko Srnic</h1>
+            <p>3rd Year Software Engineering</p>
+            <p>Availablity starting May 2024</p>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="flexbox" id="menu">
+            <a href="#about">About Me</a>
+            <a href="#project1">Python Project</a>
+            <a href="#project2">C++ Project</a>
+            <a href="#project3">HTML/CSS/JS Project</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="flexbox">
+        <div id="about">
+            <h2>About Me</h2>
+            <p>The Cambridge Dictionary defines an engineer as “a person whose job is to design or build [something], 
+                using scientific principles.” Under this definition, I would say that while I am an engineer, I do so 
+                much more. I lead and follow, I learn from others and teach others, and most importantly, I succeed 
+                and fail. While I never define myself by my failures alone, I do let my failures define my roots, not 
+                because of what led to those failures, but from how I rose past those failures, and took the knowledge 
+                and experience that came from doing so. It is with this mentality that I reach for the stars, and is 
+                the mindset I would bring along if you gave me a chance. While video game design has always been a 
+                personal interest of mine, I would love to pursue it as a career, in addition to database organization, 
+                cybersecurity, or other Information and Technology services.</p>
+        </div>
+        <div id="aboutIMG">
+            <img src="grad4.jpg">
+        </div>
+        </div>
+    </section>
+    <section class="main-section">
+        <div id="projects">
+            <h2>Project Portfolio</h2>
+        </div>
+        <div class="flexbox">
+            <div id="project1IMG">
+                <img src="DnD Pygame.png" id="python">
+            </div>
+            <div id="project1">
+                <h2><a href="https://github.com/msrnic/Python-DnD-Visual-Database">Python Project - D&D Visual Database</a></h2>
+                <p>In this project, I developed a Graphical User Interface (GUI) 
+                    to display and search for spells from the popular table-top 
+                    roleplaying game Dungeons & Dragons (D&D). I developed buttons,
+                    text format, a search bar and even an animated cursor completely from scratch. I retrieved my data 
+                    from the official D&D 5th Edition API, which contains all the 
+                    information regarding the attributes and characteristics for any asset
+                    in the game, in the JSON format. For this project, I relied on my skills in Python, but also gained
+                    exposure to the JSON text format, and knowledge in working with
+                    the Pygame library. I also applied the concepts of Object-Oriented 
+                    Programming in the project, with extensive use of Polymorphism and Inheritance.</p>
+                    
             </div>
         </div>
-        </div>
-    </div>
-    <section class="fade" id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
     </section>
-    <section>
-        <h2>Projects</h2>
-        <div class="project fade">
-            <h3>Python Project - Dungeons & Dragons Visual Database</h3>
-            <p>In this project, I developed a Graphical User Interface (GUI) 
-                to display and search for spells from the popular table-top 
-                roleplaying game Dungeons & Dragons (D&D). I retrieved my data 
-                from the official D&D 5th Edition API, which contains all the 
-                information regarding the attributes and characteristics for any asset
-                in the game, in the JSON format. For this project, I relied on my skills in Python, but also gained
-                exposure to the JSON text format, and knowledge in working with
-                the Pygame library. I also appled the concepts of Object-Oriented 
-                Programming extensively in the project.
+    <section class="main-section">
+        <div class="flexbox">
+        <div id="project2">
+            <h2><a href="https://github.com/msrnic/HackEDBeta-MipsClips">HackED C++ Project - MipsClips</a></h2>
+            <p>MipsClips is designed to read and interpret MIPS Assembly Code, and emulate its execution in a manner akin to real life.
+                In addition to the implementation of the core MIPS instruction types, the program features the ability to modify and 
+                view its own "simulated memory" system. For this project, I collaborated on a team with three of my friends in a 
+                24-hour coding and design challenge that was presented to a panel of judges. This project taught me about memory 
+                allocation and optimization, and avoiding memory hazards, something that is vital to both C++ and Assembly Languages. 
+                It also gave me a practical experience in C++, as before this project my C++ skills felt diminished, but since the 
+                completion of this project I feel much more confident in my abilities.
             </p>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+        <div id="project2IMG">
+            <img src="MipsClips.png" id="cplusplus">
         </div>
-
-        <!-- Add more projects as needed -->
-
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Phone: +1 (780)-868-6803</p>
-        <p>Email: msrnic@ualberta.ca, m.srnic951@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/marko-srnic-3792562a9/" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/msrnic" target="_blank">GitHub Profile</a></p>
+    <section class="main-section">
+        <div class="flexbox" id="flex3">
+            <div id="project3">
+                <h2><a href="https://github.com/msrnic/msrnic.github.io">HTML/CSS/JS Project: Portfolio Website</a></h2>
+                <p>Yes, this website was also created by me! Using the Github Pages hosting feature, I built this website completely 
+                    from scratch. I incorporated the use of links and images in the HTML section, applied the stylistic choices in 
+                    CSS, and created the image slideshow at the top of the webpage using Javascript. As you can see this website 
+                    may seem a little... rudimentary, and that is because this website is my current ongoing project. A second 
+                    version of this site is already in development, as this one project not only served as a web design teaching 
+                    tool, but also as a test to see my capabilites under strict time constraints. This entire website was developed 
+                    in just 48 hours, during which I not only designed and developed the website from scratch, but I also taught 
+                    myself HTML, CSS, and Javascript.</p>
+            </div>
+        </div>
     </section>
-    <!--
-    <footer>
-        <p>&copy; 2024 Marko Srnic - Portfolio</p>
-    </footer>
--->
-    </body>
+    <section class="main-section">
+        <div id="projects">
+            <h2 id="contact">Contact Me</h2>
+        </div>
+        <p id="contacts">msrnic@ualberta.ca | +1(780)-868-6803</p>
+    </section>
+</body>
 </html>
-*/
